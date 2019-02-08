@@ -1,8 +1,9 @@
 ---
 layout: default
-tile: Aome
+tile: about
 ---
 
-# About page
+# about page
 
-This page tells you a little bit about me.
+nosy rosy!
+
