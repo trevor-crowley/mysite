@@ -1,11 +1,11 @@
 ---
 layout: post
-categories: devop 
+categories: k8s 
 ---
 
 Setting up a k8s local cluster on KVM is surprisingly non-intuative.  
 
-Just the perscription needed to fill those long winter days!
+Just the prescription needed to fill these long winter days!
 
 The rules are simple:  
 1. command line only, using vi and tmux on a non ubuntu distro
