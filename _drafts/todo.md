@@ -2,14 +2,8 @@
 layout: post
 author: me
 ---
-1. setup rook
-1. setup pipline, jenkings
- * flow = remote -> Git -> server
- * check spelling 
-1. add project feature (use category)
-1. setup Ghost in production (Docker)
-* setup Kubernetes local cloud (document)
-1. research ansible 
+1. fix dockerhub helm script to use nfs for drive work-around
+1. setup private docker [registry](https://www.nearform.com/blog/how-to-run-a-public-docker-registry-in-kubernetes/)
 1. Mandlebro project (fun)
  * mockup in matlab - done
  * plan with fixed point 
