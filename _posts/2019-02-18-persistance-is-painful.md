@@ -18,7 +18,7 @@ Let's see if NFS will be a more reliable and loyal friend.
   * ensure mount.nfs installed on worker nodes
   * dns [working](https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/)?  ping nodes?  no.  DNS not working on subnet.  use IP 
   * test mount on worker via `showmount -e IP`
-
+  * clever way to convert PVC to custom [NFS](https://stackoverflow.com/questions/34282704/can-a-pvc-be-bound-to-a-specific-pv)
 
 
 
