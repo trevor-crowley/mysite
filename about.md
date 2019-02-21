@@ -10,3 +10,5 @@ Sense of "adverse, opposed, obstructing, contrary, opposite" is from 1560s; of p
 
 note:  site optimized for zero page rank
 
+
+<sub>last updated {{site.time | date: '%Y:%B:%A:%d:%S:%R'}} </sub>
