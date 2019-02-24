@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: k8s 
+tags : [k8s rook metallb kvm ]
 ---
 
 Setting up a k8s local cluster on KVM is surprisingly non-intuative.  

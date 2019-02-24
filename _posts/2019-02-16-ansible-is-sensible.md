@@ -1,6 +1,6 @@
 ---
 layout: post
-category: k8s
+tags : [k8s, ansible, kvm, rook, matallb]
 ---
 
 1. build 8ks-controller, worker1-3 using `create-vm.sh`

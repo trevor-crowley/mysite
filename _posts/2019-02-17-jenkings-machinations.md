@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: k8s 
+tags : [k8s jenkins ruby docker]
 ---
 Full CI scalable pipeline for a static website?  Totaly warranted.
 1. manual process
