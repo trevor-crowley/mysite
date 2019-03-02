@@ -19,4 +19,4 @@ The rabbit hole just gets deeper and deeper bigger...
 1. Mandlebro project (fun)
  * mockup in matlab float vs vp
  * plan with fixed point
-
+1. influx.DB
