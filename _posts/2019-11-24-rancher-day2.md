@@ -20,11 +20,16 @@ Goal:  set production features
  - postgres [install](https://en.opensuse.org/SDB:PostgreSQL), [setup](https://thebuild.com/presentations/not-your-job-pgconf-us-2017.pdf), [config](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04), and [secure](http://www.project-open.com/en/howto-postgresql-port-secure-remote-access)
 1. logging (todo)
  - move from W10 to w3 via affinity 
- - test docer-reg on extern container:5000 with port forward
- - nging update config for header size to fix -- cloud to test
- - using simple reg off k8s for now...
- 
-
+1. setup private docker store
+ - setup docker image on 0.0.0.0:5000 , see [docs](https://docs.docker.com/registry/deploying/)
+ - add rancher reg
+ - update web, jhub to use private dockers (speed)
+  
+<pre>
+docker build -t tcrow.io/mysite .
+docker tag tcrow.io/mysite registry.tcrow.io:5000/mysite:latest
+docker push registry.tcrow.io:5000/mysite:latest
+</pre>
 projects:
 
 1. migrate redmine for POC - done
