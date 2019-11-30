@@ -22,6 +22,8 @@ Goal:  set production features
  - move from W10 to w3 via affinity 
  - test docer-reg on extern container:5000 with port forward
  - nging update config for header size to fix -- cloud to test
+ - using simple reg off k8s for now...
+ 
 
 projects:
 
