@@ -20,11 +20,14 @@ Goal:  set production features
  - postgres [install](https://en.opensuse.org/SDB:PostgreSQL), [setup](https://thebuild.com/presentations/not-your-job-pgconf-us-2017.pdf), [config](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04), and [secure](http://www.project-open.com/en/howto-postgresql-port-secure-remote-access)
 1. logging (todo)
  - move from W10 to w3 via affinity 
+ - test docer-reg on extern container:5000 with port forward
+ - nging update config for header size to fix -- cloud to test
 
 projects:
 
 1. migrate redmine for POC - done
 1. migrate wiki - done
+1. install SQL on linux for ML
 1. setup private docker [reg](https://docs.docker.com/registry/deploying/)
 1. setup rancher workflows for jenkins -> docker -> k8s pub
 1. fix ownCloud filesize limit
