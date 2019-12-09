@@ -34,12 +34,12 @@ projects:
 
 1. migrate redmine for POC - done
 1. migrate wiki - done
-1. install SQL on linux for ML
-1. setup private docker [reg](https://docs.docker.com/registry/deploying/)
-1. setup rancher workflows for jenkins -> docker -> k8s pub
+1. install SQL on linux for ML - done	
+1. setup private docker [reg](https://docs.docker.com/registry/deploying/) - done
 1. fix ownCloud filesize limit
-1. test slack mesage to redmine task
 1. setup AWS
+1. setup rancher workflows for jenkins -> docker -> k8s pub
+1. test slack mesage to redmine task
 1. setup remine agile plugin, pain
 
 <pre>
@@ -52,3 +52,28 @@ externalDatabase.name=redmine
 externalDatabase.user=
 externalDatabase.password=
 </pre>
+
+fix this:
+
+<pre>
+Traceback (most recent call last):
+2019-12-01 8:17:39 AM       File "/usr/local/lib/python3.6/dist-packages/tornado/gen.py", line 589, in error_callback
+2019-12-01 8:17:39 AM         future.result()
+2019-12-01 8:17:39 AM       File "/usr/local/lib/python3.6/dist-packages/jupyterhub/handlers/base.py", line 807, in finish_user_spawn
+2019-12-01 8:17:39 AM         await spawn_future
+2019-12-01 8:17:39 AM       File "/usr/local/lib/python3.6/dist-packages/jupyterhub/user.py", line 642, in spawn
+2019-12-01 8:17:39 AM         raise e
+2019-12-01 8:17:39 AM       File "/usr/local/lib/python3.6/dist-packages/jupyterhub/user.py", line 546, in spawn
+2019-12-01 8:17:39 AM         url = await gen.with_timeout(timedelta(seconds=spawner.start_timeout), f)
+2019-12-01 8:17:39 AM       File "/usr/local/lib/python3.6/dist-packages/kubespawner/spawner.py", line 1740, in _start
+2019-12-01 8:17:39 AM         for event in self.events
+2019-12-01 8:17:39 AM       File "/usr/local/lib/python3.6/dist-packages/kubespawner/spawner.py", line 1491, in events
+2019-12-01 8:17:39 AM         for event in self.event_reflector.events:
+2019-12-01 8:17:39 AM       File "/usr/local/lib/python3.6/dist-packages/kubespawner/spawner.py", line 72, in events
+2019-12-01 8:17:39 AM         key=lambda x: x.last_timestamp,
+2019-12-01 8:17:39 AM     TypeError: '<' not supported between instances of 'datetime.datetime' and 'NoneType'
+2019-12-01 8:17:39 AM 
+2019-12-01 8:18:05 AM 
+</pre>
+
+Done - found [this](https://github.com/jupyterhub/kubespawner/issues/354)
