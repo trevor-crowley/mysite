@@ -6,3 +6,8 @@ pipeline:
       - gem install bundler
       - bundle install
       - bundle exec jekyll build
+  update:
+    image: tcrow.io:5000/mysite:latest
+    commands:
+      - ls -la
+      - cp _site/* /usr/share/nginx/html
