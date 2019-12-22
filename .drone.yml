@@ -1,6 +1,7 @@
 pipeline:
   build:
-    image: jekyll/jekyll 
+    image: ruby
     commands:
+      - gem install bundler
+      - bundle install
       - bundle exec jekyll build
-
