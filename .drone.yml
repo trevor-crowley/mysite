@@ -1,13 +1,22 @@
-pipeline:
-  build:
-    image: ruby
-    commands:
-      - ls -la
-      - gem install bundler
-      - bundle install
-      - bundle exec jekyll build
-  update:
-    image: tcrow.io:5000/mysite:latest
-    commands:
-      - ls -la
-      - cp -r _site/* /usr/share/nginx/html
+---
+kind: pipeline
+name: notify-pipeline-start
+
+steps:
+  - name: slack
+    image: plugins/slack
+    settings:
+      webhook:
+        from_secret: SLACK_WEBHOOK
+      channel: drone
+      link_names: true
+      template: >
+        {{#if build.pull }}
+          *Build started*: {{ repo.owner }}/{{ repo.name }} - <https://github.com/{{ repo.owner }}/{{ repo.name }}/pull/{{ build.pull }}|Pull Request #{{ build.pull }}>
+        {{else}}
+          *Build started: {{ repo.owner }}/{{ repo.name }} - Build #{{ build.number }}* (type: `{{ build.event }}`)
+        {{/if}}
+        Commit: <https://github.com/{{ repo.owner }}/{{ repo.name }}/commit/{{ build.commit }}|{{ truncate build.commit 8 }}>
+        Branch: <https://github.com/{{ repo.owner }}/{{ repo.name }}/commits/{{ build.branch }}|{{ build.branch }}>
+        Author: {{ build.author }}
+        <{{ build.link }}|Visit build page ↗>
