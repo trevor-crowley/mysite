@@ -1,7 +1,8 @@
 ---
-layout: post
+date: "2019-02-17T00:00:00Z"
+tags:
+- k8s jenkins ruby docker
 ---
-tags : [k8s jenkins ruby docker]
 Full CI scalable pipeline for a static website?  Totaly warranted.
 1. manual process
   * `jekyll.ruby2.5 b`

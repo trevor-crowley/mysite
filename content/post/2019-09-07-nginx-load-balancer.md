@@ -1,7 +1,7 @@
 ---
-layout : post
+date: "2019-09-07T00:00:00Z"
+tags: nginx
 ---
-tags : nginx 
 
 Goal:  setup reverse proxy for Http, the Https with loggin
 

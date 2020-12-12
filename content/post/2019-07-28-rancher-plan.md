@@ -1,7 +1,7 @@
 ---
-layout : post
+date: "2019-07-28T00:00:00Z"
+tags: k8s rancher
 ---
-tags : k8s rancher
 Goal:  plan rancher / kubernetes setup [tricky](https://thenewstack.io/7-key-considerations-for-kubernetes-in-production/)
 
 1. server names

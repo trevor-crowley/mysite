@@ -1,7 +1,8 @@
 ---
-layout: post
+date: "2019-05-25T00:00:00Z"
+tag:
+- k8s rancher
 ---
-tag : [k8s rancher]
 
 Networking is unduly difficult.
 

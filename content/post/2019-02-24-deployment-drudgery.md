@@ -1,7 +1,8 @@
 ---
-layout : post
+date: "2019-02-24T00:00:00Z"
+tags:
+- k8s prometheus grafana bitnami
 ---
-tags : [k8s prometheus grafana bitnami]
 
 Running bitnami stateful apps on bare-metal k8s?  
 

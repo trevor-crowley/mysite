@@ -1,6 +1,7 @@
 ---
-layout: post
-tags : ["k8s", "rook", "metallb", "kvm" ]
+date: "2019-02-10T00:00:00Z"
+tags:
+- k8s rook metallb kvm
 ---
 
 Setting up a k8s local cluster on KVM is surprisingly non-intuative.  

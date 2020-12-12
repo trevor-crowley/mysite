@@ -1,7 +1,7 @@
 ---
-layout : post
+date: "2019-03-02T00:00:00Z"
+tags: k8s nginx
 ---
-tags : k8s nginx
 Goal:  understand and setup k8s [ingress](https://akomljen.com/kubernetes-nginx-ingress-controller/)  controller
 
 1. read nginx docs:

@@ -1,0 +1,26 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysite-deployment 
+  labels:
+    app: mysite
+spec:
+  replicas: 2
+  selector:
+      matchLabels:
+          app: mysite
+  template:
+    metadata:
+        labels:
+            app:  mysite
+    spec:       
+      containers:
+      - name: mysite
+        image: tcrowley/mysite
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: regcred
+

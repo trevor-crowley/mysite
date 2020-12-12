@@ -1,7 +1,7 @@
 ---
-layout : post
+date: "2019-08-19T00:00:00Z"
+tags: k8s rancher
 ---
-tags : k8s rancher
 
 Goal:  build rancher server
 

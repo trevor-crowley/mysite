@@ -1,7 +1,8 @@
 ---
-layout: post
+date: "2019-02-18T00:00:00Z"
+tags:
+- k8s ceph rook longhorn nfs
 ---
-tags : [k8s ceph rook longhorn nfs]
 
 After much pain with ceph, rook, longhorn, and the k8s docs, I have relagated bare-metal distributed filesystem to the hipster bin for now.
 

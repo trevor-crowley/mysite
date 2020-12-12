@@ -1,7 +1,7 @@
 ---
-layout : post
+date: "2019-11-17T00:00:00Z"
+tags: rancher
 ---
-tags : rancher	
 
 Goal:  build rancher for production-ish
 

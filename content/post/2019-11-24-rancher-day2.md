@@ -1,7 +1,7 @@
 ---
-layout : post
+date: "2019-11-24T00:00:00Z"
+tags: rancher
 ---
-tags : rancher	
 
 Goal:  set production features
 

@@ -1,7 +1,7 @@
 ---
-layout : post
+date: "2019-09-01T00:00:00Z"
+tags: k8s rancher
 ---
-tags : k8s rancher
 
 ### Hardware and Infrastructure ###
 

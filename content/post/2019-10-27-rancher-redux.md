@@ -1,7 +1,7 @@
 ---
-layout : post
+date: "2019-10-27T00:00:00Z"
+tags: rancher
 ---
-tags : rancher	
 
 Goal:  rebuild rancher to work with external subdomain
 

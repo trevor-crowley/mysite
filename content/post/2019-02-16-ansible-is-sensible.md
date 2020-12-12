@@ -1,8 +1,13 @@
 ---
-layout: post
+date: "2019-02-16T00:00:00Z"
+tags:
+- k8s
+- ansible
+- kvm
+- rook
+- matallb
 ---
 
-tags : [k8s, ansible, kvm, rook, matallb]
 1. build 8ks-controller, worker1-3 using `create-vm.sh`
   * ssh to root for each host
   * fixed IP 

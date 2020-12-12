@@ -1,7 +1,8 @@
 ---
-layout: post
+date: "2019-03-24T00:00:00Z"
+tag:
+- k8s rancher
 ---
-tag : [k8s rancher]
 
 To paraphrase Bob Widlar:  
 >every idiot can create a single-node kubernetes cluster
